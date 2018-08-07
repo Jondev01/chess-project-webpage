@@ -1,0 +1,1 @@
+Web application for blindfold chess exercise created in HTML, CSS and Javascript
