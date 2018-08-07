@@ -1,0 +1,201 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color:#f4f4f4;
+	
+}
+/*global*/
+.container{
+	width: 70%;
+	margin:auto;
+	overflow: hidden;
+}
+.mainFrame {
+    position: relative;
+    text-align: center;
+    color: black;
+	text-shadow: 0 0 5px #fff;
+}
+.mainFrame img{
+    width:100%;
+	height:auto;
+}
+
+.smallContainer{
+	float:left;
+	width: 24.5rem;
+	padding:10px;
+	margin:auto;
+	overflow: visible;
+	border: 10px solid black;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	font-size:24pt;
+    transform: translate(-50%, -50%);
+}
+.centered h1{
+	color:white;
+	text-shadow: 0 0 5px #000;
+}
+
+.button{
+	height: 30px;
+	background: #0d09dd;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;	
+}
+
+.button:hover{
+	background: #0d0977;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+/*.infoBox {
+    position: relative;
+}*/
+
+.infoText {
+    visibility: hidden;
+    width: 150px;
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+	left:30%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.infoBox:hover .infoText {
+    visibility: visible;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	background: #F0E68C; 
+	text-align:center;
+	overflow:hidden
+}
+table#chessTable {
+	visibility:hidden;
+}
+td {
+	overflow:hidden;
+    width: 30px; height: 30px;
+	vertical-align:middle;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+	background: black;
+}
+
+img {
+	vertical-align:middle;
+	height:25px;
+}
+img#boardIcon{
+	margin-left:0.5rem;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+/*header*/
+header{
+	background: #000000;/*#35424a*/
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d;
+
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header .current a{
+	color:#0d09dd;
+	font-weight: bold;
+}
+header a:hover{
+	color: #cccccc;
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #Title{
+	float: left;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+/* Increase the font size of the <h1> element */
+aside#Instruction{
+	float:left;
+	width:30%;
+	margin-top:10 px;
+	text-align:justify;
+}
+
+aside#chessLeft{
+	float:left;
+	display:block;
+	font-weight:bold;
+	max-width:20rem;
+}
+aside#chessRight{
+	float:right;
+	display:block;
+}
+.left{
+	float:left;
+	text-align:center;
+}
+#Answer{
+	font-size:14pt;
+}
+div #chessBox{
+	font-size: 14pt;
+}
+div #divStreak{
+	font-weight:bold;
+	color:#d40503;
+	
+}
+
+footer {
+    background: #000000;/*#35424a*/
+	padding: 20px;
+	color: #ffffff;
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	height:30px;
+	text-align: center;
+}
